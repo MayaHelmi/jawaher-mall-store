@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <title>Jawaher Mall</title>
+  <meta name="description" content="جواهر مول بإربد، سوق البخارية: ملابس نسائية وأطفال، بيجامات، أحذية وحقائب. توصيل لجميع أنحاء المملكة والدفع عند الاستلام.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without holding up the page: the logo font (only the letters of "Jawaher Mall") and the Arabic text font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&text=Jawaher%20Mall&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&text=Jawaher%20Mall&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="tokens/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <!-- Hold the first paint until the whole page has been read and drawn by its scripts, so a page-to-page
+       transition (effects.css) fades into the finished page, never an empty frame. No element has this id on purpose. -->
+  <link rel="expect" href="#page-read" blocking="render">
+</head>
+<body>
+  <!-- The header, page content and footer below are the Arabic site written out as plain HTML, so search
+       engines and link previews that do not run JavaScript still see it. The scripts at the bottom redraw all
+       of it (and switch language): change text in js/i18n.js, js/content.js and js/products.js, not here. -->
+  <div id="site-header" class="site-head">
+    <a class="skip-link" href="#main">انتقلي إلى المحتوى</a>
+    <div class="announce"><div class="container announce__inner"><span class="announce__text"><span class="announce__msg">توصيل مجاني فوق 30.00 د.أ · الدفع عند الاستلام</span></span><button class="announce__close" type="button" data-close-announce="" aria-label="إغلاق"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div>
+    <header class="header"><div class="container header__inner"><div class="header__corner header__corner--left"><button class="icon-btn" type="button" data-open-menu="" aria-label="القائمة" aria-controls="menu-drawer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"></path></svg></button><button class="lang-btn" type="button" data-lang-toggle="" aria-label="Switch to English">EN</button></div><div class="header__start"><nav class="nav" aria-label="تسوّقي"><ul class="nav__list"><li><a class="nav__link" href="shop.html">تسوّقي</a></li><li><a class="nav__link" href="about.html">عن جواهر مول</a></li></ul></nav></div><a class="wordmark" href="index.html" aria-label="Jawaher Mall">Jawaher Mall<small>Irbid, Jordan</small></a><div class="header__end"><nav class="nav" aria-label="معلومات"><ul class="nav__list"><li><a class="nav__link" href="track.html">تتبعي طلبك</a></li><li><a class="nav__link" href="help.html">الأسئلة الشائعة</a></li><li><a class="nav__link" href="contact.html">تواصلي معنا</a></li></ul></nav><a class="icon-btn only-desktop" href="shop.html?focus=search" aria-label="بحث"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg></a><button class="lang-btn" type="button" data-lang-toggle="" aria-label="Switch to English">EN</button><a class="icon-btn" href="bag.html" aria-label="السلة" data-bag-target="" data-open-bag="" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="count-badge" data-bag-count="" hidden="">0</span></a></div><div class="header__corner header__corner--right"><a class="icon-btn" href="shop.html?focus=search" aria-label="بحث"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg></a><a class="icon-btn" href="bag.html" aria-label="السلة" data-bag-target="" data-open-bag="" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="count-badge" data-bag-count="" hidden="">0</span></a></div></div></header>
+    <dialog class="drawer" id="menu-drawer" aria-label="القائمة"><div class="drawer__head"><a class="wordmark" href="index.html">Jawaher Mall<small>Irbid, Jordan</small></a><button class="icon-btn" type="button" data-close-menu="" aria-label="إغلاق"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div><nav class="drawer__body" aria-label="القائمة"><div class="drawer__group"><p class="eyebrow">تسوّقي</p><a class="drawer__link" href="shop.html"><span>تسوّقي الكل</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a><a class="drawer__link" href="shop.html?cat=sets"><span>أطقم وترينينغ</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a><a class="drawer__link" href="shop.html?cat=outerwear"><span>جاكيتات ومعاطف</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a><a class="drawer__link" href="shop.html?cat=tops"><span>كنزات وبلايز</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a><a class="drawer__link" href="shop.html?cat=sleepwear"><span>بيجامات</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a><a class="drawer__link" href="shop.html?cat=shoes"><span>أحذية وحقائب</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a><a class="drawer__link" href="shop.html?cat=kids"><span>أطفال</span><svg class="icon icon--flip" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a></div><div class="drawer__group"><p class="eyebrow">معلومات</p><a class="drawer__link drawer__link--small" href="track.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"></path><circle cx="7" cy="18" r="1.6"></circle><circle cx="17" cy="18" r="1.6"></circle></svg><span>تتبعي طلبك</span></a><a class="drawer__link drawer__link--small" href="help.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M9.6 9.6a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6M12 16.8v.4"></path></svg><span>الأسئلة الشائعة</span></a><a class="drawer__link drawer__link--small" href="about.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 11v5.5M12 7.5v.5"></path></svg><span>عن جواهر مول</span></a><a class="drawer__link drawer__link--small" href="contact.html"><img class="icon icon--logo" src="assets/brand/instagram.svg" alt="" width="24" height="24"><span>تواصلي معنا</span></a></div></nav></dialog>
+  </div>
+
+  <main id="main" class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb" id="breadcrumb"></ol></nav>
+
+    <div class="pdp">
+      <div class="gallery">
+        <div class="gallery__thumbs" id="thumbs"></div>
+        <div class="gallery__track" id="track" tabindex="0"></div>
+        <div class="gallery__dots" id="dots" aria-hidden="true"></div>
+      </div>
+
+      <form class="buybox" id="buybox" novalidate>
+        <div class="buybox__title">
+          <p class="eyebrow" id="p-collection"></p>
+          <h1 class="h1" id="p-name"></h1>
+          <div class="buybox__meta">
+            <p class="buybox__price" id="p-price"></p>
+            <p class="stock" id="p-stock"></p>
+            <a class="rating-link" id="p-rating" href="#reviews" hidden></a>
+          </div>
+        </div>
+
+        <fieldset class="buybox__group">
+          <legend class="buybox__label"><span data-i18n="colorLabel"></span><strong id="p-color-name"></strong></legend>
+          <div class="options" id="p-colors"></div>
+        </fieldset>
+
+        <fieldset class="buybox__group">
+          <legend class="buybox__label"><span data-i18n="sizeLabel"></span><strong id="p-size-name"></strong></legend>
+          <div class="options" id="p-sizes"></div>
+          <p class="field__error" id="size-error" role="alert"></p>
+          <!-- Size help, side by side: the advisor and the size chart -->
+          <div class="buybox__help">
+            <button class="fit-trigger" type="button" id="fit-open" aria-haspopup="dialog"></button>
+            <button class="link" type="button" id="size-guide-link" data-i18n="sizeGuide" aria-haspopup="dialog"></button>
+          </div>
+        </fieldset>
+
+        <p class="buy-note" id="buy-note"></p>
+
+        <div class="buybox__cta" id="main-cta">
+          <!-- Shows once this colour and size is in the bag, and changes how many are in it -->
+          <div class="qty" id="p-qty-box" data-i18n-aria="qtyLabel" hidden>
+            <button type="button" data-qty="-1" data-i18n-aria="decrease">−</button>
+            <output id="p-qty" aria-live="polite">1</output>
+            <button type="button" data-qty="1" data-i18n-aria="increase">+</button>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit" data-i18n="addToBag"></button>
+        </div>
+        <button class="btn btn--secondary btn--block" type="button" id="buy-now" data-i18n="buyNow"></button>
+
+        <div class="accordion">
+          <details open>
+            <summary data-i18n="details"></summary>
+            <div class="accordion__body" id="p-details"></div>
+          </details>
+          <details>
+            <summary data-i18n="deliveryInfo"></summary>
+            <div class="accordion__body" id="p-delivery"></div>
+          </details>
+          <details>
+            <summary data-i18n="exchangeInfo"></summary>
+            <div class="accordion__body" id="p-exchange"></div>
+          </details>
+        </div>
+      </form>
+    </div>
+
+    <!-- Approved customer reviews (hidden until there are some) -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title" hidden></section>
+
+    <section class="section" aria-labelledby="also-title">
+      <div class="section-head"><h2 class="h2" id="also-title" data-i18n="alsoLike"></h2></div>
+      <div class="rail" id="also"></div>
+    </section>
+  </main>
+
+  <div class="sticky-buy" id="sticky-buy" aria-hidden="true">
+    <div class="sticky-buy__info"><strong id="sticky-name"></strong><span id="sticky-price"></span></div>
+    <button class="btn btn--primary" type="button" id="sticky-add" tabindex="-1" data-i18n="addToBag"></button>
+  </div>
+
+  <div id="site-footer">
+    <footer class="footer"><div class="container"><div class="footer__grid"><div class="footer__brand"><a class="wordmark" href="index.html">Jawaher Mall<small>Irbid, Jordan</small></a><p>ملابس نسائية وأطفال، أحذية وحقائب. إربد، شارع المتنبي، سوق البخارية.</p><ul class="footer__links"><li><a href="https://www.instagram.com/jawaher.mall2/" target="_blank" rel="noopener"><img class="icon icon--logo" src="assets/brand/instagram.svg" alt="" width="24" height="24"><span class="handle" dir="ltr">@jawaher.mall2</span></a></li></ul></div><div><p class="footer__title">تسوّقي</p><ul class="footer__links"><li><a href="shop.html?cat=sets">أطقم وترينينغ</a></li><li><a href="shop.html?cat=outerwear">جاكيتات ومعاطف</a></li><li><a href="shop.html?cat=tops">كنزات وبلايز</a></li><li><a href="shop.html?cat=sleepwear">بيجامات</a></li><li><a href="shop.html?cat=shoes">أحذية وحقائب</a></li><li><a href="shop.html?cat=kids">أطفال</a></li></ul></div><div><p class="footer__title">مساعدة</p><ul class="footer__links"><li><a href="track.html">تتبعي طلبك</a></li><li><a href="help.html">الأسئلة الشائعة</a></li></ul></div><div><p class="footer__title">جواهر مول</p><ul class="footer__links"><li><a href="about.html">عن جواهر مول</a></li><li><a href="contact.html">تواصلي معنا</a></li></ul></div></div><div class="footer__bottom"><p>الصور من صفحة جواهر مول على إنستغرام. <bdi dir="ltr">© 2026 Jawaher Mall</bdi></p></div></div></footer>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/tones.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/fit.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
